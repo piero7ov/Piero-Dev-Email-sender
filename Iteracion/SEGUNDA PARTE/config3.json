@@ -1,0 +1,23 @@
+{
+  "smtp": {
+    "host": "smtp.gmail.com",
+    "port": 587,
+    "user": "[EMAIL_ADDRESS]",
+    "password": "[PASSWORD]",
+    "use_tls": true
+  },
+  "email": {
+    "from": "[EMAIL_ADDRESS]",
+    "to": [
+      "[EMAIL_ADDRESS]",
+      "[EMAIL_ADDRESS]",
+      "[EMAIL_ADDRESS]"
+    ],
+    "subject": "Envío con Gmail en HTML + PDF",
+    "body_text": "Hola,\n\nEste es el cuerpo de texto planoo.\n\nSaludos.",
+    "html_template": "plantilla.html",
+    "attachments": [
+      "CV_Olivares_Velasquez_Jose_Piero - informatica.pdf"
+    ]
+  }
+}
