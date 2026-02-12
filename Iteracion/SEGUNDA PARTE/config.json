@@ -1,0 +1,17 @@
+{
+  "smtp": {
+    "host": "smtp.gmail.com",
+    "port": 587,
+    "user": "[EMAIL_ADDRESS]",
+    "password": "[PASSWORD]",
+    "use_tls": true
+  },
+  "email": {
+    "from": "[EMAIL_ADDRESS]",
+    "to": [
+      "[EMAIL_ADDRESS]"
+    ],
+    "subject": "Correo de prueba con Gmail",
+    "body": "Hola, esta es una prueba de envío de correo desde Python con Gmail SMTP."
+  }
+}
