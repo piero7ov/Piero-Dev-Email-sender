@@ -1,0 +1,20 @@
+{
+  "smtp": {
+    "host": "smtp.gmail.com",
+    "port": 587,
+    "user": "[EMAIL_ADDRESS]",
+    "password": "[PASSWORD]",
+    "use_tls": true
+  },
+  "email": {
+    "from": "[EMAIL_ADDRESS]",
+    "to": [
+      "[EMAIL_ADDRESS]",
+      "[EMAIL_ADDRESS]",
+      "[EMAIL_ADDRESS]"
+    ],
+    "subject": "Correo de prueba con Gmail en HTML",
+    "body_text": "Hola,\n\nEste es el cuerpo de texto plano.\n\nSaludos.",
+    "html_template": "template.html"
+  }
+}
