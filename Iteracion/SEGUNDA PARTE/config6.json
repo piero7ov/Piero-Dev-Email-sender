@@ -1,0 +1,48 @@
+{
+    "smtp": {
+        "host": "smtp.gmail.com",
+        "port": 587,
+        "user": "[EMAIL_ADDRESS]",
+        "password": "[PASSWORD]",
+        "use_tls": true
+    },
+    "email": {
+        "from": "[EMAIL_ADDRESS]",
+        "to": [
+            "[EMAIL_ADDRESS]",
+            "[EMAIL_ADDRESS]",
+            "[EMAIL_ADDRESS]"
+        ],
+        "subject": "PIERODEV · Dev Free Agent (CV + Contacto)",
+        "body_text": "Hola,\n\nTe comparto mi perfil como Dev Free Agent. Adjunto mi CV en PDF y también mi tarjeta de contacto (vCard) para que puedas guardarme en un clic.\n\nPortafolio: https://piero7ov.github.io/Portafolio/\nGitHub: https://github.com/piero7ov\n\nSaludos,\nPiero (PIERODEV)",
+        "html_template": "plantilla.html",
+        "attachments": [
+            "CV_Olivares_Velasquez_Jose_Piero - informatica.pdf"
+        ],
+        "log_file": "sent_emails.log"
+    },
+    "vcard": {
+        "enabled": true,
+        "full_name": "Jose Piero Olivares Velasquez",
+        "title": "Dev Free Agent",
+        "email": "[EMAIL_ADDRESS]",
+        "portfolio": "https://piero7ov.github.io/Portafolio/",
+        "github": "https://github.com/piero7ov",
+        "phone": "",
+        "location": "Valencia, España",
+        "filename": "PIERODEV.vcf"
+    },
+    "ps": {
+        "enabled": true,
+        "prefix": "P.D.:",
+        "add_to_text": true,
+        "add_to_html": true,
+        "html_style": "margin:14px 0 0; padding:12px 12px; border-radius:12px; background:#f8fafc; border:1px solid #e2e8f0; color:#334155; font-size:11px; line-height:16px;",
+        "phrases": [
+            "Si quieres, te paso 2–3 ideas rápidas para mejorar tu web en 10 minutos.",
+            "Si ya tienes un proyecto en marcha, puedo ayudarte a mejorar performance, UI y mantenimiento.",
+            "Puedo adaptarme a tu flujo de trabajo: entregas cortas y comunicación clara.",
+            "Puedo crear herramientas de automatizacion para ayudarte a ser mas eficiente."
+        ]
+    }
+}
