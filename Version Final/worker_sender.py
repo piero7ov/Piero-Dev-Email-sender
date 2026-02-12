@@ -317,13 +317,13 @@ if __name__ == "__main__":
 
     # --------------------------------------------------------
     # CONFIG FIJO:
-    # Ya migraste a config9.json, así que aquí lo apuntamos directo.
+    # Apuntamos directo a config.json
     # --------------------------------------------------------
     cfg_path = BASE_DIR / "config.json"
     if not cfg_path.exists():
         raise FileNotFoundError(f"No existe config.json en: {cfg_path}")
 
-    # Cargar config con la función del 010 (evita duplicar loaders)
+    # Cargar config con la función
     cfg = sender.load_config(cfg_path)
 
     # Cola y parámetros del worker

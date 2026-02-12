@@ -3,9 +3,9 @@
 #  SCRIPT PRINCIPAL: Envío de emails (send_now) + Encolado (schedule)
 # ------------------------------------------------------------
 #  Qué hace este script:
-#   - Lee un config fijo (config9.json) en la misma carpeta del script.
+#   - Lee un config fijo en la misma carpeta del script.
 #   - Según app.mode:
-#       * send_now  -> ENVÍA inmediatamente (como siempre)
+#       * send_now  -> ENVÍA inmediatamente
 #       * schedule  -> NO envía, solo mete jobs en queue.json y sale
 #
 #  Features incluidas (desde config):
@@ -1178,7 +1178,7 @@ def schedule_only(cfg: dict) -> None:
 
 if __name__ == "__main__":
 
-    # Config FIJO (tú lo querías así)
+    # Config FIJO
     config_path = (BASE_DIR / "config.json").resolve()
 
     if not config_path.exists():
