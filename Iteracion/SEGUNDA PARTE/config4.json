@@ -1,0 +1,34 @@
+{
+    "smtp": {
+        "host": "smtp.gmail.com",
+        "port": 587,
+        "user": "[EMAIL_ADDRESS]",
+        "password": "[PASSWORD]",
+        "use_tls": true
+    },
+    "email": {
+        "from": "[EMAIL_ADDRESS]",
+        "to": [
+            "[EMAIL_ADDRESS]",
+            "[EMAIL_ADDRESS]"
+        ],
+        "subject": "PIERODEV · Dev Free Agent (CV + Contacto)",
+        "body_text": "Hola,\n\nTe comparto mi perfil como Dev Free Agent. Adjunto mi CV en PDF y también mi tarjeta de contacto (vCard) para que puedas guardarme en un clic.\n\nPortafolio: https://piero7ov.github.io/Portafolio/\nGitHub: https://github.com/piero7ov\n\nSaludos,\nPiero (PIERODEV)",
+        "html_template": "plantilla.html",
+        "attachments": [
+            "CV_Olivares_Velasquez_Jose_Piero - informatica.pdf"
+        ],
+        "log_file": "sent_emails.log"
+    },
+    "vcard": {
+        "enabled": true,
+        "full_name": "Jose Piero Olivares Velasquez",
+        "title": "Dev Free Agent",
+        "email": "[EMAIL_ADDRESS]",
+        "portfolio": "https://piero7ov.github.io/Portafolio/",
+        "github": "https://github.com/piero7ov",
+        "phone": "",
+        "location": "Valencia, España",
+        "filename": "PIERODEV.vcf"
+    }
+}
